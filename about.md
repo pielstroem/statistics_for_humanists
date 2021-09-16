@@ -26,4 +26,4 @@ titles:
 key: page-about
 ---
 
-This tutorial has been developed by Steffen Pielström at the [University of Würzburg](www.uni-wuerzburg.de) as part of the infrastructure project [CLARIAH-DE](https://www.clariah.de/) that has been funded by German [Federal Minstriy of Education and Research](https://www.bmbf.de/b) from 2019 to 2021.
+This tutorial has been developed by Steffen Pielström at the [University of Würzburg](www.uni-wuerzburg.de) as part of the infrastructure project [CLARIAH-DE](https://www.clariah.de/). The project has been funded by the German [Federal Minstriy of Education and Research](https://www.bmbf.de/b) from 2019 to 2021.
