@@ -1,6 +1,6 @@
 ---
 title: 1. Introduction
-tags: TeXt
+tags: 
 article_header:
   type: cover
   image:

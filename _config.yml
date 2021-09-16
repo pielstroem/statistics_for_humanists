@@ -64,7 +64,7 @@ repository_tree: master
 paths:
   root    : # title link url, "/" (default)
   home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
+  #archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
 
@@ -207,13 +207,13 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
-      license: true
+      sharing: false
+      license: false
       aside:
         toc: true
-      show_edit_on_github: true
-      show_subscribe: true
-      pageview: true
+      show_edit_on_github: false
+      show_subscribe: false
+      pageview: false
 
 
 ## => Plugins

@@ -1,6 +1,6 @@
 ---
 title: 3. Examining assumptions through null hypotheses with the binomial test
-tags: TeXt
+tags: 
 article_header:
   type: cover
   image:

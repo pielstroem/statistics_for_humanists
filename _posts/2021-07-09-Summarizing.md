@@ -1,6 +1,6 @@
 ---
 title: 2. Describing and summarizing numerical observations
-tags: TeXt
+tags: 
 article_header:
   type: cover
   image:
