@@ -18,12 +18,12 @@ When describing observational data, the first aspect is the type of data we have
 
 If we ask the same people for their gender, the result might look like this:
 
-> female, male, female, female, female, male, female, female, male, female
+> female, female, female, female, female, male, female, female, male, female
 
 The obvious difference is that one data set is **numerical** while the other is **categorical**, i.e. it contains instances of categories, that can be alternatively expressed as a table of counts:
 
-> female: 7
-> male: 3
+> female: 8
+> male: 2
 
 The type of data or **level of measurement** as it is usually called in text books is a concept closely related to the *data types* distinguished in programming languages. In `Python` for example, the first set could be handled as a `list` of `integer`s, the second as a `list` of `strings`s.
 
@@ -248,7 +248,7 @@ height = c(156, 188, 190, 176, 166, 160, 182, 171, 185, 169)
 
 and
 ```
-gender = c("female", "male", "female", "female", "female", "male", "female", "female", "male", "female")
+gender = c("female", "female", "female", "female", "female", "male", "female", "female", "male", "female")
 ```
 
 #### The sample size

@@ -1,5 +1,5 @@
 ---
-title: 1. Introduction to a tutorial on analytical statistics for (Digital) humanists
+title: 1. Introducting a tutorial on analytical statistics for (digital) humanists
 tags: 
 article_header:
   type: cover
