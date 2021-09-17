@@ -1,5 +1,5 @@
 ---
-title: 3. Examining assumptions through null hypotheses with the binomial test
+title: 3. Analyzing proportions - null hypothesis and binomial test
 tags: 
 article_header:
   type: cover

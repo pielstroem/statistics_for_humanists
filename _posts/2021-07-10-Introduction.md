@@ -1,12 +1,10 @@
 ---
-title: 1. Introduction
+title: 1. Introduction to a tutorial on analytical statistics for (Digital) humanists
 tags: 
 article_header:
   type: cover
   image:
 ---
-
-## Examining Assumptions through Null Hypotheses - A Short Introduction to Analytical Statistics for (Digital) Humanists
 
 *by Steffen Pielström*
 
