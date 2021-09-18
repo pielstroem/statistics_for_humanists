@@ -1,6 +1,6 @@
 ---
-title: 1. Introducting a tutorial on analytical statistics for (digital) humanists
-tags: 
+title: 1. Introducing a tutorial on analytical statistics for (digital) humanists
+tags: introduction, libraries, further_reading
 article_header:
   type: cover
   image:

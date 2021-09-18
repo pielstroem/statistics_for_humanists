@@ -1,6 +1,6 @@
 ---
 title: 2. Describing and summarizing numerical observations
-tags: 
+tags: levels_of_measurement, sample_size, mean, median, mode, standard_deviation, quantiles
 article_header:
   type: cover
   image:
