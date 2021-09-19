@@ -25,7 +25,7 @@ The obvious difference is that one data set is **numerical** while the other is 
 > female: 8
 > male: 2
 
-The type of data or **level of measurement** as it is usually called in text books is a concept closely related to the *data types* distinguished in programming languages. In `Python` for example, the first set could be handled as a `list` of `integer`s, the second as a `list` of `strings`s.
+The type of data or **level of measurement** as it is usually called in text books is a concept closely related to the *data types* distinguished in programming languages. In `Python` for example, the first set could be handled as a `list` of `integer`, the second as a `list` of `strings`.
 
 The majority of statistics text books agrees on categorizing data sets according to a system of three levels of measurement.
 
@@ -35,7 +35,7 @@ The **nominal** level describes plain categorical data. Each observation is desc
 
 If the instances of observation are clearly distinct and categorical, but subject to an obvious ordering hierarchy, statisticians ascribe the data to the **ordinal** level. 
 
-The ordinal level usually is the most complicated to explain. Here, your observations are categorical like in the nominal level, they can be ranked like in the interval level, but unlike interval data they are not numbers that can be meaningfully used in mathematical operations. A good example is the German school mark system. In German schools, marks are expressed in numbers ranging from 1 (*very good*) to 6 (nice try, but you got nothing right). The marks are expressed in numbers, but these numbers describe distinct categories. They are clearly ranked - 2 is better than a 4 - but a 4 does not describe a performance *twice as bad as a 2*.
+The ordinal level usually is the most complicated to explain. Here, your observations are categorical like in the nominal level, they can be ranked like in the interval level, but unlike interval data they are not numbers that can be meaningfully used in mathematical operations. A good example is the German school mark system. In German schools, marks are expressed in numbers ranging from 1 (*very good*) to 6 (*nice try, but you got nothing right*). The marks are expressed in numbers, but these numbers describe distinct categories. They are clearly ranked - 2 is better than a 4 - but a 4 does not describe a performance *twice as bad as a 2*.
 
 ## Sample size
 
@@ -53,17 +53,17 @@ $$
 \bar{x} = \frac{\sum_{i=1}^N x_i}{N}
 $$
 
-$x$ representing the observation value and $N$ sample size.
+with $x$ representing the observation value and $N$ sample size.
 
 An often very useful alternative to the arithmetic mean is the **median**. The idea of the median is mathematically very simple: you order all the numbers of a data set according to their value and find the one right in the center. If we do that for the body height data, we get:
 
 > 156, 160, 166, 169, **171**, **176**, 182, 185, 188, 190
 
-Unfortunately now have two numbers in the center, for there is an even number of observations. The simple solution to that problem is to calculate the arithmetic mean of these two numbers and get a median of *173.5*.
+Unfortunately now have two numbers in the center, because there is an even number of observations. The simple solution to that problem is to calculate the arithmetic mean of these two numbers and get a median of *173.5*.
 
-The arithmetic mean of the same data set is *174.3*. Now, which statistic should you use? In many cases, they are very close. And if they are close, it is in principal a matter of personal preference. However, more people are familiar with the arithmetic mean, and it is more useful for follow-up mathematical operations, so I would recommend to report the arithmetic mean if it makes little to no difference. If there is a marked difference between mean and median, this is an indicator for extreme values in the high or the low end of the measurements in the data set. Mean values can be influenced by single extreme values, median values not so much. Therefore you should report the median in that case. 
+The arithmetic mean of the same data set is *174.3*. Now, which statistic should you use? In many cases, they are very close. And if they are close, it is more or less a matter of personal preference. However, more people are familiar with the arithmetic mean, and it is more useful for follow-up mathematical operations, so I would recommend to report the arithmetic mean if it makes little to no difference. If there is a marked difference between mean and median, this is an indicator for extreme values at the high or at the low end of the measurements in the data set. Mean values can be influenced by single extreme values, median values not so much. Therefore you should report the median in that case. 
 
-Obviously, we cannot compute means and medians for purely categorical data. For categorical observations, we can compute the **mode**, which is simply the category we observed most often. So the mode of the categorical set shown above would simply be *female*.
+Obviously, we cannot compute means and medians for purely categorical data. For categorical observations, we can compute the **mode**, which is simply the category we observed most often. So the mode of the categorical set shown above would be *female*.
 
 ## Standard deviation and quantiles
 
@@ -71,23 +71,23 @@ Obviously, we cannot compute means and medians for purely categorical data. For 
 
 One representative value is nice, but you often also want to know about the variability in your data. For numerical data, the simplest way to report variability is to report the **range** of the values, i.e. the highest and the lowest value. However, in large data sets with some very extreme outliers this often is not the most useful information.
 
-The most popular alternative is to look at the differences between single observed values and the arithmetic mean. These can be squared to treat negative and positive deviations equally, summed and divided by sample size to get what we call the **variance** ($s^2$) of the data set:
+The most popular alternative is to look at how much the observed values deviate from the arithmetic mean. The individual differences can be squared to treat negative and positive deviations equally, summed and divided by sample size to get what we call the **variance** ($s^2$) of the data set:
 
 $$
 s^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})^2
 $$
 
-Variance calculation can give us values that are very large compared to the mean of the data set. But we can "reduce" it to the scale of the actual data by taking the square root. The resulting value is called **standard deviation** ($s$):
+Variance calculation can give us values that are very large compared to the mean of the data set. But we can "reduce" it to the scale of the actual data by taking the square root afterwards. The resulting value is called **standard deviation** ($s$):
 
 $$
 s = \sqrt{s^2} = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})^2}
 $$
 
-In programming languages, some implementations of standard deviation use *degrees of freedom*, that is sample size minus one, instead of sample size as a denominator. Therefore, when using different programming libraries on to calculate standard deviation for the same data set, results can be slightly different. However, with sufficiently large sample sizes that is usually not a serious problem.
+In programming languages, some implementations of standard deviation use *degrees of freedom*, that is sample size minus one, instead of sample size as a denominator. Therefore, when using different programming libraries to calculate variance or standard deviation for the same data set, results can be slightly different. However, with sufficiently large sample sizes that is usually not a serious problem.
 
 A numerical data set without one-sided extremes can be well described by a combination of arithmetic mean (the "typical" value), standard deviation (variability) and sample size.
 
-But data sets can be heavy on the upper or the lower end of the spectrum and that is why arithmetic means are not always the best choice. Luckily, the concept of the median described above can be generalized to derive also descriptions for data variability. The generalization of the idea behind the median is known as the **quantile**.
+But data sets can be heavy on the upper or the lower end of the spectrum and that is why arithmetic means are not always the best choice. Luckily, the concept of the median described above can be generalized to derive descriptions for data variability too. The generalization of the idea behind the median is known as the **quantile**.
 
 What is a quantile? Well, if we order all values by size, we can identify the value in the center, the one at half distance (50%) between the smallest and the largest, to get the median. 50% Of all measurements are smaller than the median. The other 50% are larger. But we can also identify a value that is 30% on the way from smallest to largest. 30% Of the measurements have (equal or) smaller values than this one. In our example:
 
@@ -108,7 +108,7 @@ The 1st and 3rd quartile are often referred to, because the central 50% of all m
 
 ### in Python
 
-There are multiple libraries in `Python` that provide functions for descriptive statistics. To keep it simple, we will use only `numpy` here.
+There are multiple libraries in `Python` that provide functions for descriptive statistics. To keep it simple, we will stick mostly `numpy` here.
 ```
 import numpy as np
 ```
@@ -119,7 +119,7 @@ height = np.array([156, 188, 190, 176, 166, 160, 182, 171, 185, 169])
 ```
 
 #### The sample size
-of that array can simply be indicate with:
+of that array can simply be indicated with:
 ```
 len(height)
 ```
@@ -140,7 +140,7 @@ np.mean(height)
 174.3
 ```
 
-To get the **median** we simply type:
+To get the **median** we type:
 ```
 np.median(height)
 ```
@@ -252,7 +252,7 @@ gender = c("female", "female", "female", "female", "female", "male", "female", "
 ```
 
 #### The sample size
-of a vector can simply be indicate with:
+of a vector can simply be indicated with:
 ```
 length(height)
 ```
@@ -263,7 +263,7 @@ length(height)
 ```
 
 #### Mean, median and mode
-The **arithmetic mean** be computed with the following command:
+The **arithmetic mean** is computed with the following command:
 ```
 mean(height)
 ```
@@ -273,7 +273,7 @@ mean(height)
 [1] 174.3
 ```
 
-To get the **median** we simply type:
+To get the **median** we type:
 ```
 median(height)
 ```
