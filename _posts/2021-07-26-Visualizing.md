@@ -57,9 +57,9 @@ In a boxplot, a thick bar indicates the **median** for each series. The range fr
 
 If there is only one number associated with each of multiple categories - this number may well be just the number of instances or any other kind of numerical measurement - the most common visualization is the barplot. Here, each category is represented by a bar, the length of this bar indicates the measurement for the category (Fig. 4).
 
-![Figure 4: Boxplot](/assets/images/barplotPy2.png)
+![Figure 4: Boxplot](assets/images/barplotPy2.png)
 
-*Figure 4: Example barplot*
+*Figure 4: Example barplot* TEST NO /
 
 What is the difference between a barplot and a histogram? Well, they are certainly related and they can look kind of similar, but conceptually they serve completely different purposes. The histogram, as described above, is used to visualize the distributional shape of a single, continuous series. In a barplot on the contrary, the variable on the *X* axis is a discrete one, and each category of this variable is combined with a single numerical measurement on the *Y* axis.
 
