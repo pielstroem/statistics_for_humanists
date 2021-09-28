@@ -17,7 +17,7 @@ The *histogram* is a common way to visualize a single series of continuous data,
 
 ![Figure 1: Histogram](histogramR2.png)
 
-*Figure 1: Example histogram*
+*Figure 1: Example histogram* TEST NOPATH
 
 Somehow, a histogram is transforming a continuous variable into a number of discrete categories - the bins - and the counts for each category. It can tell us a lot about the *shape* of a data set. Is it symmetrical or skewed, i.e. are there more extreme values to one side that to the other? Does it seem to have a single peak, i.e. one most likely value or several? How wide is the range of rather likely values?
 
@@ -35,7 +35,7 @@ are visualized in a *scatterplot*. This is the classical diagram with points tha
 
 <img src="/assets/images/scatterplotR2.png"/>
 
-*Figure 2: Example scatterplot*
+*Figure 2: Example scatterplot* TEST HTML
 
 ## The box-whisker plot
 
@@ -45,7 +45,9 @@ If you have multiple categories with a set of continuous measurements belonging 
 
 ![Figure 3: Boxplot](/assets/images/boxplotR2.png)
 
-*Figure 3: Example boxplot*
+<img class="image image--lg" src="/assets/images/boxplotR2.png"/>
+
+*Figure 3: Example boxplot* TEST HTML COPYPASTE
 
 In a boxplot, a thick bar indicates the **median** for each series. The range from the **25% quantile** to the **75% quantile** is represented by a box. This box contains the central 50% of the values. The long *whiskers* on each side of the box reach to the **minimum** and **maximum** values respectively. The boxplot therefore conveys a relatively precise idea about the center and variability of each category. It contains a little less information than a series of histograms, but it is very useful to compare several categories. 
 
