@@ -15,7 +15,7 @@ Visualizations are by themselves a vast topic, and not the focus of this tutoria
 
 The *histogram* is a common way to visualize a single series of continuous data, or a set of numbers, if you prefer to call it that. The basic idea of a histogram is to divide the range of possible numbers into equally-sized chunks, usually called ***bins***, and to count the number of measurements falling into each of these bins. The range of measurements constitutes the *X* axis in the visualization. The length of a bar in the *Y* direction indicates how many observations are in the corresponding bin (Fig. 1).
 
-![Figure 1: Histogram](/assets/images/histogramR2.png)
+![Figure 1: Histogram](histogramR2.png)
 
 *Figure 1: Example histogram*
 
