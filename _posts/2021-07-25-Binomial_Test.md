@@ -1,5 +1,5 @@
 ---
-title: 3. Analyzing proportions - null hypothesis and the binomial test
+title: 4. Analyzing proportions - null hypothesis and the binomial test
 tags: null_hypothesis, p-value, significance, errors, one-sided_testing
 article_header:
   type: cover

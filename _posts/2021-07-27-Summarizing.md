@@ -20,7 +20,7 @@ If we ask the same people for their gender, the result might look like this:
 
 > female, female, female, female, female, male, female, female, male, female
 
-The obvious difference is that one data set is **numerical** while the other is **categorical**, i.e. it contains instances of categories, that can be alternatively expressed as a table of counts:
+The obvious difference is that one data set is **numerical** and probably even **continuous** while the other is **categorical** and **discrete**, i.e. it contains instances of categories, that can be alternatively expressed as a table of counts:
 
 > female: 8
 > male: 2
