@@ -15,9 +15,9 @@ Visualizations are by themselves a vast topic, and not the focus of this tutoria
 
 The *histogram* is a common way to visualize a single series of continuous data, or a set of numbers, if you prefer to call it that. The basic idea of a histogram is to divide the range of possible numbers into equally-sized chunks, usually called ***bins***, and to count the number of measurements falling into each of these bins. The range of measurements constitutes the *X* axis in the visualization. The length of a bar in the *Y* direction indicates how many observations are in the corresponding bin (Fig. 1).
 
-![Figure 1: Histogram](histogramR2.png)
+![Figure 1: Histogram](/statistics_for_humanists/assets/images/histogramR2.png)
 
-*Figure 1: Example histogram* TEST NOPATH
+*Figure 1: Example histogram*
 
 Somehow, a histogram is transforming a continuous variable into a number of discrete categories - the bins - and the counts for each category. It can tell us a lot about the *shape* of a data set. Is it symmetrical or skewed, i.e. are there more extreme values to one side that to the other? Does it seem to have a single peak, i.e. one most likely value or several? How wide is the range of rather likely values?
 
@@ -31,11 +31,9 @@ The other caveat is the **number of bins**. Too few bins will convey little info
 
 are visualized in a *scatterplot*. This is the classical diagram with points that have *X* and *Y* coordinates you probably know from school. One convention in experimental research: if there is one variable you are manipulating while observing the other, the manipulated or **independent variable** goes onto the *X* axis, whereas the observed or **dependent variable** goes onto the *Y* axis (Fig. 2).
 
-![Figure 2: Scatterplot](/assets/images/scatterplotR2.png)
+![Figure 2: Scatterplot](/statistics_for_humanists/assets/images/scatterplotR2.png)
 
-<img src="/assets/images/scatterplotR2.png"/>
-
-*Figure 2: Example scatterplot* TEST HTML
+*Figure 2: Example scatterplot*
 
 ## The box-whisker plot
 
@@ -43,11 +41,9 @@ are visualized in a *scatterplot*. This is the classical diagram with points tha
 
 If you have multiple categories with a set of continuous measurements belonging to each, you could plot a histogram for each of the categories and compare them. Alternatively, you use the **box-whisker plot** or **boxplot** to put multiple series of measurements into one single visualization. An example is shown in Fig. 3.
 
-![Figure 3: Boxplot](/assets/images/boxplotR2.png)
+![Figure 3: Boxplot](/statistics_for_humanists/assets/images/boxplotR2.png)
 
-<img class="image image--lg" src="/assets/images/boxplotR2.png"/>
-
-*Figure 3: Example boxplot* TEST HTML COPYPASTE
+*Figure 3: Example boxplot*
 
 In a boxplot, a thick bar indicates the **median** for each series. The range from the **25% quantile** to the **75% quantile** is represented by a box. This box contains the central 50% of the values. The long *whiskers* on each side of the box reach to the **minimum** and **maximum** values respectively. The boxplot therefore conveys a relatively precise idea about the center and variability of each category. It contains a little less information than a series of histograms, but it is very useful to compare several categories. 
 
@@ -57,9 +53,10 @@ In a boxplot, a thick bar indicates the **median** for each series. The range fr
 
 If there is only one number associated with each of multiple categories - this number may well be just the number of instances or any other kind of numerical measurement - the most common visualization is the barplot. Here, each category is represented by a bar, the length of this bar indicates the measurement for the category (Fig. 4).
 
-![Figure 4: Boxplot](assets/images/barplotPy2.png)
+![Figure 4: Boxplot](/statistics_for_humanists
+/assets/images/barplotPy2.png)
 
-*Figure 4: Example barplot* TEST NO /
+*Figure 4: Example barplot*
 
 What is the difference between a barplot and a histogram? Well, they are certainly related and they can look kind of similar, but conceptually they serve completely different purposes. The histogram, as described above, is used to visualize the distributional shape of a single, continuous series. In a barplot on the contrary, the variable on the *X* axis is a discrete one, and each category of this variable is combined with a single numerical measurement on the *Y* axis.
 
@@ -97,13 +94,7 @@ plt.hist(life_span)
 plt.show()
 ```
 
-![Histogram](/assets/images/histogramPy1.png)
-
-<div style="width:80%; margin:0 auto;" align="center" markdown="1">
-    ![image](/assets/images/histogramPy1.png){:.circle.shadow}
-</div>
-
-TEST WITHDIV
+![Histogram](/statistics_for_humanists/assets/images/histogramPy1.png)
 
 This is the distribution of life spans. Without descriptive statistics we can see on an instant that a vast majority of the authors in the data set died at ages between 50 and 90 years.
 
@@ -116,7 +107,7 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-![Histogram](/assets/images/histogramPy2.png)
+![Histogram](/statistics_for_humanists/assets/images/histogramPy2.png)
 
 
 #### Scatterplot
@@ -146,7 +137,7 @@ plt.scatter(year_of_death, life_span)
 plt.show()
 ```
 
-![Scatterplot](/assets/images/scatterplotPy1.png)
+![Scatterplot](/statistics_for_humanists/assets/images/scatterplotPy1.png)
 
 This example quite nicely shows us how a scatterplot can give you insights to data, provoke interpretations and lead to new hypotheses. What we probably see here is the increase in life expectancy during the recent century, and the adverse effects of the Spanish civil war...
 
@@ -159,7 +150,7 @@ plt.ylabel('life span (years)')
 plt.show()
 ```
 
-![Scatterplot](/assets/images/scatterplotPy2.png)
+![Scatterplot](/statistics_for_humanists/assets/images/scatterplotPy2.png)
 
 #### Boxplot
 
@@ -183,7 +174,7 @@ plt.boxplot(data)
 plt.show()
 ```
 
-![Boxplot](/assets/images/boxplotPy1.png)
+![Boxplot](/statistics_for_humanists/assets/images/boxplotPy1.png)
 
 To make it pretty we must, among other things, specify labels for the categories.
 
@@ -194,7 +185,7 @@ plt.ylabel('life span (years)')
 plt.show()
 ```
 
-![Boxplot](/assets/images/boxplotPy2.png)
+![Boxplot](/statistics_for_humanists/assets/images/boxplotPy2.png)
 
 #### Barplot
 
@@ -211,7 +202,7 @@ plt.bar(names, female)
 plt.show()
 ```
 
-![Barplot](/assets/images/barplotPy1.png)
+![Barplot](/statistics_for_humanists/assets/images/barplotPy1.png)
 
 And with axis labels, it looks like this.
 
@@ -222,7 +213,7 @@ plt.ylabel('life span (years)')
 plt.show()
 ```
 
-![Barplot](/assets/images/barplotPy2.png)
+![Barplot](/statistics_for_humanists/assets/images/barplotPy2.png)
 
 
 ### in R
@@ -249,7 +240,7 @@ Plotting a histogram for a vector of numbers is quite straightforward: with the 
 hist(life_span)
 ```
 
-![Histogram](/assets/images/histogramR1.png)
+![Histogram](/statistics_for_humanists/assets/images/histogramR1.png)
 
 This is the distribution of life spans. Without descriptive statistics we can see on an instant that a vast majority of the authors in the data set died at ages between 50 and 90 years.
 
@@ -261,7 +252,7 @@ hist(life_span,
 	main = NULL)
 ```
 
-![Histogram](/assets/images/histogramR2.png)
+![Histogram](/statistics_for_humanists/assets/images/histogramR2.png)
 
 
 #### Scatterplot
@@ -290,7 +281,7 @@ Scatterplots can be easily drawn with the generic `plot()` function.
 plot(year_of_death, life_span)
 ```
 
-![Scatterplot](/assets/images/scatterplotR1.png)
+![Scatterplot](/statistics_for_humanists/assets/images/scatterplotR1.png)
 
 This example quite nicely shows us how a scatterplot can give you insights to data, provoke interpretations and lead to new hypotheses. What we probably see here is the increase in life expectancy during the recent century, and the adverse effects of the Spanish civil war...
 
@@ -302,7 +293,7 @@ plot(year_of_death, life_span,
 	ylab = 'life span (years)')
 ```
 
-![Scatterplot](/assets/images/scatterplotR2.png)
+![Scatterplot](/statistics_for_humanists/assets/images/scatterplotR2.png)
 
 #### Boxplot
 
@@ -317,7 +308,7 @@ male = c(51, 77, 67, 51, 62, 68, 84)
 boxplot(female, male)
 ```
 
-![Boxplot](/assets/images/boxplotR1.png)
+![Boxplot](/statistics_for_humanists/assets/images/boxplotR1.png)
 
 Now the same in pretty:
 
@@ -329,7 +320,7 @@ boxplot(female, male,
 	ylab = 'life span (years)')
 ```
 
-![Boxplot](/assets/images/boxplotR2.png)
+![Boxplot](/statistics_for_humanists/assets/images/boxplotR2.png)
 
 #### Barplot
 
@@ -339,7 +330,7 @@ With the barplot, we can look at the life spans of the individual female authors
 barplot(female)
 ```
 
-![Barplot](/assets/images/barplotR1.png)
+![Barplot](/statistics_for_humanists/assets/images/barplotR1.png)
 
 This function however gives us an output that is not too informative by default. You definitely want to add some names for the categories. The names of the female novelists are:
 
@@ -356,4 +347,4 @@ barplot(female,
 	ylab = 'life span (years)')
 ```
 
-![Barplot](/assets/images/barplotR2.png)
+![Barplot](/statistics_for_humanists/assets/images/barplotR2.png)
