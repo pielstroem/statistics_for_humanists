@@ -99,6 +99,12 @@ plt.show()
 
 ![Histogram](/assets/images/histogramPy1.png)
 
+<div style="width:80%; margin:0 auto;" align="center" markdown="1">
+    ![image](/assets/images/histogramPy1.png){:.circle.shadow}
+</div>
+
+TEST WITHDIV
+
 This is the distribution of life spans. Without descriptive statistics we can see on an instant that a vast majority of the authors in the data set died at ages between 50 and 90 years.
 
 Among scientists it is custom to give labels to axes, so let us turn this output into something presentable.
