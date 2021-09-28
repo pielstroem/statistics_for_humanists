@@ -54,7 +54,7 @@ In a boxplot, a thick bar indicates the **median** for each series. The range fr
 If there is only one number associated with each of multiple categories - this number may well be just the number of instances or any other kind of numerical measurement - the most common visualization is the barplot. Here, each category is represented by a bar, the length of this bar indicates the measurement for the category (Fig. 4).
 
 ![Figure 4: Boxplot](/statistics_for_humanists
-/assets/images/barplotPy2.png)
+/assets/images/barplotR2.png)
 
 *Figure 4: Example barplot*
 
