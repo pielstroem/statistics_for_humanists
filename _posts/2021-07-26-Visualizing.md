@@ -33,6 +33,8 @@ are visualized in a *scatterplot*. This is the classical diagram with points tha
 
 ![Figure 2: Scatterplot](/assets/images/scatterplotR2.png)
 
+<img src="/assets/images/scatterplotR2.png"/>
+
 *Figure 2: Example scatterplot*
 
 ## The box-whisker plot
