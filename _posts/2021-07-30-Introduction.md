@@ -31,7 +31,8 @@ you find in this tutorial, the first thing you require is a distribution of `Pyt
 
 The next thing to consider is the selection of necessary **`Python` packages**. Being an all-purpose programming language, `Python` provides few of the functionalities we need *out-of-the-box*. But there is a number of great packages providing all the functions and methods we need. If you use [Anaconda](https://www.anaconda.com/) or [Machine Learning Workspace](https://github.com/ml-tooling/ml-workspace), all packages you need are part of the bundle. If not, you should at least take care to have the following the 
 
-- `numpy` and 
+- `numpy`,
+- `matplotlib` and
 - `scipy` 
 
 packages installed.
