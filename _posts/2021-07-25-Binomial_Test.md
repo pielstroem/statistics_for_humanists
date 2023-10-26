@@ -8,9 +8,9 @@ article_header:
 
 In the categorial data set I introduced in the past chapter, there were 8 females and 2 males. In research we often deal with proportions like this one. And as often, we have to ask ourselves if that proportion means something. When observing proportions, the important question is often:
 
-> Is this proportion only a result of random chance, or have other effects influenced it?
+> Is this proportion a result of random chance only, or has it been influenced by other effects?
 
-8 Females and 2 males in one group at first glace look like the result of a selection process that preferred one side. With a 5:5 distribution we would be less suspicious. However, if the people in the sample were selected by random chance only and there is a 50% chance for each single person to be female, it is actually not that likely to end up exactly at 5:5. And if you toss a coin 10 times, 8 heads is not an impossible result actually. So what to do with our suspicion that 8 out of ten is too extreme a result to believe in random chance?
+8 Females and 2 males in one group at first glace look like the result of a selection process that preferred one side. With a 5:5 distribution we would be less suspicious. However, if the people in the sample were selected by random chance only and there is a 50% chance for each single person to be female, it is actually not that likely to end up exactly at 5:5. And if you toss a coin 10 times, 8 heads is not an impossible result. So what to do with our suspicion that 8 out of ten is too extreme a result to believe in random chance?
 
 ## Null hypothesis and p value
 
@@ -28,15 +28,15 @@ In our example, that is quite easy. If people in the sample were chosen randomly
 
 > ffff, mfff, fmff, ffmf, fffm, mmff, fmmf, ffmm, mffm, fmfm, mfmf, mmmf, mmfm, mfmm, fmmm, mmmm
 
-We have 16 possible combinations, 1 with four females, 4 with 3 females, 6 with 2 females, 4 with 1 female, and 1 with 0 females. What can we learn from this? The probability to have four females in a group of four if only random chance is to choose, is $\frac{1}{16}$. The probability for any kind of gender homogeneous group is $\frac{1}{16}+\frac{1}{16}=\frac{1}{8}$. The chance to have **at least** three females in the group, that is either three or four, is $\frac{1}{16}+\frac{4}{16}=\frac{5}{16}$, and the chance that either one of the genders is represented by at least three people twice as large ($\frac{10}{16}$).
+We have 16 possible combinations, 1 with four females, 4 with 3 females, 6 with 2 females, 4 with 1 female, and 1 with 0 females. What can we learn from this? The probability to have four females in a group of four, if only random chance is to choose, is $\frac{1}{16}$. The probability for any kind of gender homogeneous group is $\frac{1}{16}+\frac{1}{16}=\frac{1}{8}$. The chance to have **at least** three females in the group, that is either three or four, is $\frac{1}{16}+\frac{4}{16}=\frac{5}{16}$, and the chance that either one of the genders is represented by at least three people twice is as large ($\frac{10}{16}$).
 
-I could write all the possible combinations for a group of ten now. Fortunately, there are fancy looking formulae that can help us calculate the numbers. Generally, the probability $P_k$ to get $k$ heads in $n$ coin tosses at a single toss probability of $p$ (0.5 for any normal coin) is:
+I could write all the possible combinations for a group of ten now, find all the probabilities for 8, 9, 10 females and sum them up to get the probability for at least 8 females under random conditions. Fortunately, there are fancy looking formulae that can help us calculate the numbers. Generally, the probability $P_k$ to $k$ or more heads in $n$ coin tosses at a single toss probability of $p$ (0.5 for any normal coin) is:
 
 $$
 P_k = \binom nk p^k (1-p)^{n-k}
 $$
 
-If we use this to calculate all the probabilities for 8, 9, 10 females and sum them up, we get the probability for at least 7 females under random conditions. If we multiply that figure by two, we get the probability for any single one of the genders being represented by at least 7 people. I will spare you the steps (computers are perfectly capable of doing that calculation for us) and tell you that the result is around 0.109 or 10.9%.
+If we multiply that figure by two, we get the probability for any single one of the genders being represented by at least 8 people. I will spare you the steps (computers are perfectly capable of doing that calculation for us) and tell you that the result is around 0.109 or 10.9%.
 
 What do we know now? We know that under the assumption that our observation is a result of random chance, this proportion or an even more extreme one can be found with a probability of 0.109. This probability is known as the ***p-value**. It is
 
@@ -46,7 +46,7 @@ A very important point: the *p*-value is **not** the probability of the null hyp
 
 Well, and if the reality we observe seems unlikely under a certain assumption, our null hypothesis, our temporarily accepted belief in random chance, this assumption may be flawed and we can see our observation as evidence against it. The concept of null hypothesis and *p*-value can be summed up as
 
-> proiding evidence for influencing effects by demonstrating, that something unlikely happened by chance.
+> proiding evidence for influencing effects by demonstrating, that the things we observed very unlikely happened by chance.
 
 The thing you really have to wrap your head around is: After making an observation, we assumed in the first place that something is odd with this proportion, that some mechanism has influenced it. But to examine that, we have to artificially assume randomness, because we can model that mathematically, and demonstrate how unlikely our observation would be under that contrary assumption.
 
